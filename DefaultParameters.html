@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <div id="teste">
+
+        </div>
+
+        <script>
+                function contar(param1 = 'Param1', param2 = 'Param2', param3 = 'Param3') {
+                    return `Teste de ${param1} ____ ${param2} ______ ${param3}`
+                }
+
+                document.getElementById('teste').innerHTML = contar('valor1', undefined)
+                contar();
+       </script>
+
+    </body>
+</html>

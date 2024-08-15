@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <div id="teste">
+
+        </div>
+
+        <script>
+            //Contexto de objetos
+
+            let produto = {
+                descricao: 'Notebook',
+                preco: 2500,
+                detalhes : {
+                    fabricante: 'XYZ',
+                    modelo: 'abc'
+                }
+            }
+
+            //token arrays = []
+            //token objetos = {}    
+            // let {descricao} = produto
+            // console.log(descricao)
+
+            //nomear no destructuring
+            // let {descricao: d, preco: p} = produto
+            // console.log(d)
+            // console.log(p)
+
+            //valor default para lidar com undefined
+            // let {descricao: d, preco: p, desconto: desc = 5} = produto
+            // console.log(d)
+            // console.log(desc)
+
+            //extrair atributos de objetos pertencentes a atributos de objeto (objetos internos)
+            let {descricao, detalhes:{modelo: m = 'Sem modelo'}} = produto
+            console.log(descricao)
+            console.log(m)
+
+       </script>
+
+    </body>
+</html>

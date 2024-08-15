@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <div id="teste">
+
+        </div>
+
+        <script>
+            //string
+            let titulo = 'Como utilizar o rest/spread';
+            console.log(...titulo);
+            console.log([...titulo]);
+            console.log({...titulo});
+
+            //array
+            let listaCursos = ['curso1', 'curso2']
+            
+            let listaCursos2 = ['curso3', 'curso4']
+            
+            let listaCompleta = [...listaCursos, 'curso5', 'curso6', ...listaCursos2]
+
+            console.log(listaCompleta)
+
+            //objeto
+            let pessoa = {
+                nome: 'Fernando',
+                idade: 44
+            }
+
+            let cadastroCompleto = {
+                endereco: 'Rua ABC',
+                ...pessoa
+            }
+
+            console.log(cadastroCompleto)
+            
+
+       </script>
+
+    </body>
+</html>

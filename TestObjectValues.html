@@ -1,0 +1,31 @@
+<html>
+    <body>
+
+
+        <script>
+
+            let teste = {
+                nome: 'Fernando',
+                profissional: {
+                    site: 'site1.com.br',
+                    profissao: 'Programador'
+                },
+                hobbies: [
+                    { id: 1, descricao: 'Tenis'},
+                    { id: 2, descricao: 'Pedal'}
+                ],
+                pais: 'BR'
+            }
+
+           console.log(teste)
+
+           //converte os atributos para em entradas (indices) do array
+           let obj = Object.values(teste)
+
+           console.log(obj)
+
+       </script>
+
+
+    </body>
+</html>

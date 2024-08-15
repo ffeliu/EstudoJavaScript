@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+
+            let processos = [1, 2, 3, 4, 5]
+
+            let iteracaoASync = async() => {
+
+                for(let processo of processos) {
+                    
+                    await new Promise((resolve, reject) => {
+
+                        setTimeout(() => {
+                            console.log('Processamento async')
+                            resolve()
+                        }, 2000);
+                    })
+
+                    console.log(processo)
+                }
+            }
+
+            iteracaoASync()
+
+
+       </script>
+
+    </body>
+</html>

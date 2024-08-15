@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <div id="teste">
+
+        </div>
+
+        <script>
+            class Produto {
+                constructor() {
+                    this.nome = 'Teste';
+                    this.valor = 45;
+                }
+
+                MeuPreco(){
+                    console.log(`Meu preco eh ${this.valor}`)
+                }
+                
+            }
+
+            class ProdutoTelemetria extends Produto {
+                constructor() {
+                    super()
+                    this.desconto = 10; 
+                }
+            }
+
+            let produto = new Produto();
+            produto.nome = 'Mercadoria 1'
+            produto.MeuPreco()
+
+
+            let produtoTelemetria = new ProdutoTelemetria();
+            produtoTelemetria.nome = 'Telemetria Business';
+            produtoTelemetria.MeuPreco();
+       </script>
+
+    </body>
+</html>

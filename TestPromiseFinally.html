@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+
+            let p = new Promise((resolve, reject) => {
+
+                if(true)
+                    reject('Rejeitada')
+
+                resolve('Resolvida')
+            }).then((resultado) => {
+                console.log(resultado)
+            }).catch((resultado) => {
+                console.log(resultado)
+            }).finally(() => {
+                console.log('Finally')
+            })
+
+       </script>
+
+    </body>
+</html>

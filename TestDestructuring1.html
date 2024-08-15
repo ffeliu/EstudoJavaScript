@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <div id="teste">
+
+        </div>
+
+        <script>
+            //Contexto de arrays
+            let itens = ['item1', 'item2', 'item3', 'item4']
+
+            let [a, b] = itens
+            console.log(a)
+            console.log(b)
+
+            let [a1, , , d1] = itens
+            console.log(a1)
+            console.log(d1)
+
+            let [a2, b2, c2, d2, e2 = 'item5'] = itens
+            console.log(b2)
+            console.log(e2)
+
+            let coisas = [['coisa1', 'coisa2', 'coisa3'], ['coisa4', 'coisa5', 'coisa6']]            
+            // let [, b] = coisas
+            // b.forEach(v => console.log(v))
+
+            let [[x,,y], [, z]] = coisas
+            console.log(z)
+            console.log(x)
+            console.log(y)
+
+       </script>
+
+    </body>
+</html>
